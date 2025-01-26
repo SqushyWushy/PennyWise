@@ -5,13 +5,15 @@ PennyWise API 🪙
 The PennyWise API is a Python Flask-based application designed to provide financial advice by breaking down your paycheck into the 50/30/20 rule:
 	•	50% for necessities
 	•	30% for discretionary spending
-	•	20% for savings.
+	•	20% for savings
 
-Additionally, the API calculates projected savings with a 5% annual interest rate and offers motivational financial quotes to inspire better money management.
+Additionally, the API:
+	•	Calculates projected savings with a 5% annual interest rate.
+	•	Offers motivational financial quotes to inspire better money management.
 
 🛠 Features
-	•	Paycheck Breakdown: Calculates how to allocate your paycheck using the 50/30/20 rule.
-	•	Savings Projection: Projects your potential savings growth with a 5% annual interest rate.
+	•	Paycheck Breakdown: Automatically allocates your paycheck using the 50/30/20 budgeting rule.
+	•	Savings Projection: Calculates savings growth with a 5% annual interest rate over a year.
 	•	Motivational Quotes: Delivers random financial wisdom to encourage smart spending habits.
 
 🧑‍💻 How to Use
@@ -50,8 +52,6 @@ Request
     "paycheck": 2500
 }
 
-
-
 Response
 	•	Status: 200 OK
 	•	Example:
@@ -69,7 +69,7 @@ Response
 
 GET /motivate
 
-Get a random financial motivational quote.
+Retrieve a random financial motivational quote.
 
 Request
 	•	URL: http://127.0.0.1:5000/motivate
@@ -85,27 +85,30 @@ Response
 
 🔍 How It Works
 	1.	Users send their paycheck amount to the /advise endpoint.
-	2.	The API breaks the paycheck into the 50/30/20 categories and calculates a savings projection.
-	3.	Users can also retrieve a random motivational quote from the /motivate endpoint.
+	2.	The API splits the paycheck into the 50/30/20 categories and calculates savings projection.
+	3.	Users can retrieve motivational financial quotes via the /motivate endpoint.
 
 📚 Learning Goals
 
 This project was built to:
-	•	Learn and practice Python and Flask for building REST APIs.
-	•	Implement financial calculations and JSON data validation.
-	•	Deliver meaningful financial insights in a fun, interactive way.
+	•	Practice Python and Flask for REST API development.
+	•	Implement financial calculations and JSON validation.
+	•	Deliver meaningful financial insights in an engaging way.
 
 🛠 Future Improvements
-	•	Add support for custom savings rates and custom financial rules.
-	•	Integrate a frontend interface for ease of use.
-	•	Implement multi-user accounts and saving tracking.
+	•	Add support for custom savings rates and financial rules.
+	•	Integrate a frontend interface for better usability.
+	•	Implement multi-user accounts and savings tracking.
 
 🔗 Useful Links
-	•	Flask Documentation - https://flask.palletsprojects.com/
-	•	Postman - https://www.postman.com/
-	•	GitHub - https://github.com/SqushyWushy/PennyWise
+	•	Flask Documentation: Learn about Flask, the Python web framework powering this API.
+	•	Postman: Use this tool to test API endpoints and visualize responses.
+	•	GitHub Repository: Access the full source code and installation instructions.
 
 📩 Contact
 
-Created by Hector Gonzalez
-Feel free to reach out for collaboration or questions at jhgonzalez.tx@gmail.com!
+Created by Hector Gonzalez.
+Feel free to reach out for collaboration or questions at jhgonzalez.tx@gmail.com.
+
+Disclaimer
+- This project is for educational purposes only and is not intended for real-world financial planning or production use.
